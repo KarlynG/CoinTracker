@@ -2,6 +2,8 @@
 
 CoinTracker is an application which sole purpose is to keep track of your transactions and make it easier to build a saving plan around them.
 
+[Demo](https://cointracker-cv4qoa4nrq-uc.a.run.app/)
+
 ## Features
 
 - Built with C# .NET 8
