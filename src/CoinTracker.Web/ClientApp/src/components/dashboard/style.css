@@ -1,0 +1,15 @@
+.my-container {
+  padding: 2rem;
+}
+.title {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-weight: 900;
+}
+
+.login-form {
+  justify-content: left;
+}
+
+.container-login {
+  width: 95%;
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    container_name: CoinTrackerFE
+    environment:
+      - PORT=8080
+    ports:
+      - "8080:8080"
+    networks:
+      - cointracker-network
+
+networks:
+  cointracker-network:
+    driver: bridge

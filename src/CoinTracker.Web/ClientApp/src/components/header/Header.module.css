@@ -1,0 +1,50 @@
+.header {
+    height: rem(56px);
+    margin-bottom: rem(120px);
+    background-color: var(--mantine-color-body);
+}
+
+.headerLogoContainer {
+    display: flex;
+    align-items: center;
+    width: rem(312px);
+    justify-content: space-between;
+    padding: var(--mantine-spacing-md);
+    padding-left: var(--mantine-spacing-xl);
+    margin-left: calc(var(--mantine-spacing-sm) * -1);
+    margin-right: calc(var(--mantine-spacing-sm) * -1);
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.inner {
+    height: rem(56px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(50px);
+}
+
+.userMenu{
+    margin-right: var(--mantine-spacing-md);
+    height: 20px;
+}
+
+.link {
+    display: block;
+    line-height: 1;
+    padding: rem(8px) rem(12px);
+    border-radius: var(--mantine-radius-sm);
+    text-decoration: none;
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+    font-size: var(--mantine-font-size-sm);
+    font-weight: 500;
+
+    @mixin hover {
+        background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    }
+
+    [data-mantine-color-scheme] &[data-active] {
+        background-color: var(--mantine-color-blue-filled);
+        color: var(--mantine-color-white);
+    }
+}
